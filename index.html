@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Katie Stuart | Senior Revenue Generation Leader</title>
-<meta name="description" content="Katie Stuart is a senior revenue generation leader spanning demand generation, digital programs, paid acquisition, webinars, lead conversion, marketing operations, social and partner channels." />
+<meta name="description" content="Katie Stuart is a senior revenue generation leader spanning demand generation, digital programs, paid acquisition, webinars, lead conversion, marketing operations, social and partner channels. Marketing-sourced opportunities up 3.7x since 2019." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -121,6 +121,7 @@ h1{font-size:clamp(72px,7.6vw,128px);line-height:.86;font-weight:500;max-width:8
 .ai-row:nth-child(3)>span{color:var(--blue)}
 .ai-row:nth-child(4)>span{color:var(--azure)}
 .ai-row:nth-child(5)>span{color:var(--teal)}
+.ai-row:nth-child(6)>span{color:var(--teal2)}
 
 .leadership-item:nth-child(1){border-top:4px solid var(--navy)}
 .leadership-item:nth-child(2){border-top:4px solid var(--cobalt)}
@@ -206,17 +207,71 @@ h1 .headline-arrow{color:var(--blue)}
  #proof .proof:nth-child(5){grid-column:auto}
 }
 
+/* V6: RESULTS (2019-2025 DEMAND GEN PERFORMANCE) + REAL-NUMBER PROOF TAGS */
+.stat-tag{display:inline-block;margin-top:18px;padding:5px 11px;border-radius:99px;font:700 11px/1.3 'IBM Plex Sans',sans-serif;letter-spacing:.04em;background:rgba(255,255,255,.09);border:1px solid #79cfc9;color:#b9eee9}
+#results{background:var(--paper)}
+#results .metric-big h2{font-size:clamp(70px,9vw,140px)}
+#results .metric-big h2 small{font:500 .28em/1 'Instrument Sans';letter-spacing:-.02em;color:var(--steel);margin-left:.15em}
+.metric-row em{font-style:normal;font-weight:700;font-size:12px;color:var(--blue);margin-left:6px}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:30px 32px}
+.panel-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:16px;border-bottom:1px solid var(--line-soft);margin-bottom:6px}
+.panel-head h3{font-size:24px}
+.panel-head span{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.legend{display:flex;gap:18px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend .a i{background:var(--ice);border:1px solid var(--cornflower)}
+.legend .b i{background:var(--cobalt)}
+.cmp{display:grid;grid-template-columns:128px 1fr 66px;gap:16px;align-items:center;padding:15px 0;border-top:1px solid var(--line-soft)}
+.cmp:first-of-type{border-top:0}
+.cmp-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#405d83;line-height:1.35}
+.cmp-line{display:flex;align-items:center;gap:10px;margin:4px 0}
+.cmp-line i{display:block;height:15px;border-radius:5px;min-width:4px}
+.cmp-line em{font-style:normal;font-size:11px;color:var(--soft);white-space:nowrap}
+.cmp-line em b{color:var(--ink)}
+.cmp-line.a i{background:var(--ice);border:1px solid var(--cornflower)}
+.cmp-line.b i{background:linear-gradient(90deg,var(--navy),var(--cobalt),var(--azure))}
+.cmp-delta{text-align:right;font:600 20px/1 'Instrument Sans';letter-spacing:-.03em;color:var(--teal)}
+.cmp-delta.flat{color:var(--steel)}
+.conversion{margin-top:16px;display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--ink);color:white;border-radius:22px;overflow:hidden}
+.conv-stats{display:grid;grid-template-columns:repeat(3,1fr)}
+.conv-stat{padding:32px 28px;border-right:1px solid rgba(255,255,255,.13)}
+.conv-stat small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#91abd0;margin-bottom:16px;font-weight:700}
+.conv-stat strong{display:block;font:600 30px/1.05 'Instrument Sans';letter-spacing:-.04em}
+.conv-stat strong s{color:#91abd0;text-decoration:none;font-weight:400;font-size:.62em;margin-right:4px}
+.conv-stat span{display:block;margin-top:8px;font-size:12px;color:#c9d8ed;line-height:1.45}
+.conv-next{padding:32px 36px}
+.conv-next .section-label{color:var(--aqua);margin-bottom:12px}
+.conv-next p{margin:0;color:#c9d8ed;font-size:15px}
+.conv-next p strong{color:white;font-weight:600}
+.source-note{margin:22px 0 0;font-size:11px;letter-spacing:.04em;color:var(--muted)}
+.takeaway{margin-top:16px;background:var(--mint);border-radius:18px;padding:22px 28px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.takeaway b{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.takeaway p{margin:0;color:var(--ink);font-size:16px}
+@media(max-width:1050px){
+ .results-grid,.conversion{grid-template-columns:1fr}
+ .conv-next{border-top:1px solid rgba(255,255,255,.13)}
+}
+@media(max-width:680px){
+ .cmp{grid-template-columns:1fr auto;gap:8px 12px}
+ .cmp-label{grid-column:1/-1}
+ .conv-stats{grid-template-columns:1fr}
+ .conv-stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.13)}
+ .takeaway{grid-template-columns:1fr;gap:8px}
+ .panel{padding:24px 20px}
+ .legend{display:none}
+}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="wrap nav-inner"><a class="brand" href="#top">KATIE STUART<i>.</i></a><div class="navlinks"><a href="#engine">Engine</a><a href="#channels">Scope</a><a href="#ai">AI + Automation</a><a href="#proof">Proof</a><a href="#career">Experience</a><a href="#about">About</a><a class="connect" href="#contact">Connect</a></div></div></nav>
+<nav class="nav"><div class="wrap nav-inner"><a class="brand" href="#top">KATIE STUART<i>.</i></a><div class="navlinks"><a href="#engine">Engine</a><a href="#results">Results</a><a href="#channels">Scope</a><a href="#ai">AI + Automation</a><a href="#proof">Proof</a><a href="#career">Experience</a><a href="#about">About</a><a class="connect" href="#contact">Connect</a></div></div></nav>
 <main id="top">
 <section class="hero wrap">
   <div>
     <div class="eyebrow">Senior Leader · Revenue Generation</div>
     <h1>Demand <span class="headline-arrow">→</span> pipeline.</h1>
-    <div class="hero-sub">I lead teams and revenue programs across demand, digital, operations and conversion, with a focus on measurable pipeline and practical use of AI to increase speed, scale and performance.</div>
-    <div class="hero-actions"><a class="primary" href="#engine">See the revenue engine <span>↓</span></a><a class="text-link" href="#proof">Selected work →</a></div>
+    <div class="hero-sub">I lead teams and revenue programs across demand, digital, operations and conversion, with a focus on measurable pipeline and practical use of AI to increase speed, scale and performance. <strong>Marketing-sourced opportunities are up 3.7x since 2019.</strong></div>
+    <div class="hero-actions"><a class="primary" href="#results">See the results <span>↓</span></a><a class="text-link" href="#proof">Selected work →</a></div>
   </div>
   <div class="hero-board" aria-label="Illustrative growth dashboard">
     <div class="board-top"><span>Revenue generation · live view</span><b>Optimizing</b></div>
@@ -230,35 +285,79 @@ h1 .headline-arrow{color:var(--blue)}
   <div class="flow-step"><span>04</span><strong>Pipeline</strong><small>measure · learn · invest</small></div>
 </div>
 <div class="flow-ai"><b>AI + automation</b><span>across the workflow</span></div>
-<div class="board-note"><div><b>The work is connected.</b><br><span>Channel strategy, programs, conversion and operations should behave like one system.</span></div><em>Not six teams.</em></div>
+<div class="board-note"><div><b>The work is connected.</b><br><span>Channel strategy, programs, conversion and operations should behave like one system.</span></div><em>151 → 562 opps<br>2019 → 2025</em></div>
   </div>
 </section>
-<div class="wrap"><div class="proof-strip" aria-label="Career scale placeholders">
-  <div class="proof-stat"><strong><span class="placeholder">X% / X opps</span></strong><span>Pipeline contribution / opportunity scale</span></div>
-  <div class="proof-stat"><strong><span class="placeholder">7-figure / global</span></strong><span>Investment + program scale</span></div>
-  <div class="proof-stat"><strong><span class="placeholder">X</span></strong><span>Team size / functions led</span></div>
-  <div class="proof-stat"><strong><span class="placeholder">X%</span></strong><span>Conversion / efficiency improvement</span></div>
+<div class="wrap"><div class="proof-strip" aria-label="Demand generation growth, 2019 to 2025">
+  <div class="proof-stat"><strong>3.7x</strong><span>Marketing-sourced opportunities · 151 → 562</span></div>
+  <div class="proof-stat"><strong>$154.9M</strong><span>Opportunity value · up 211% from $49.8M</span></div>
+  <div class="proof-stat"><strong>+349%</strong><span>Qualified opportunities · 75 → 337</span></div>
+  <div class="proof-stat"><strong>+20% YoY</strong><span>Opportunity creation in 2025 · 467 → 562</span></div>
 </div></div>
 
 <section class="section" id="engine"><div class="wrap">
-  <div class="section-head"><div><div class="section-label">Revenue generation</div><h2>Reach <span class="headline-arrow">→</span> revenue.</h2></div><p>I manage revenue generation as a connected operating system: audience, channel, program, capture, handoff and conversion. Each part has an owner, a target and a measurable contribution to pipeline.</p></div>
+  <div class="section-head"><div><div class="section-label">Revenue generation</div><h2>Reach <span class="headline-arrow">→</span> revenue.</h2></div><p>I manage revenue generation as a connected operating system: audience, channel, program, capture, handoff and conversion. Each part has an owner, a target and a measurable contribution to pipeline. The result has been a more diversified, multichannel engine, with measurable opportunity contribution across paid search, events, webinars, paid social, advertising, email and digital campaigns.</p></div>
   <div class="lifecycle">
     <div class="life-step"><small>01</small><h3>Find</h3><p>Audience, ICP, intent, market moments and partner leverage.</p></div>
     <div class="life-step"><small>02</small><h3>Reach</h3><p>Paid media, social, digital programs, syndication and partner channels.</p></div>
     <div class="life-step"><small>03</small><h3>Engage</h3><p>Webinars, campaigns, content journeys and conversion experiences.</p></div>
     <div class="life-step"><small>04</small><h3>Capture</h3><p>Forms, scoring, enrichment, attribution and intent signals.</p></div>
-    <div class="life-step"><small>05</small><h3>Convert</h3><p>Routing, nurture, SDR handoff, SLAs and stage progression.</p></div>
+    <div class="life-step"><small>05</small><h3>Convert</h3><p>Routing, nurture, sales handoff, SLAs and stage progression.</p></div>
     <div class="life-step"><small>06</small><h3>Learn</h3><p>Pipeline performance, CAC, conversion, velocity and next-best investment.</p></div>
   </div>
+</div></section>
+
+<section class="section" id="results"><div class="wrap">
+  <div class="section-head"><div><div class="section-label">Demand generation performance · 2019–2025</div><h2>Volume <span class="headline-arrow">→</span> value.</h2></div><p>Marketing significantly expanded its contribution to new-business opportunity creation: nearly 4x the opportunities and more than 3x the associated opportunity value compared with 2019, with growth coming from several channels at once rather than one.</p></div>
+
+  <div class="metrics">
+    <div class="metric-big"><div class="section-label" style="margin-bottom:18px">Marketing-sourced opportunities</div><h2>3.7x<small>+272%</small></h2><p>From 151 opportunities in 2019 to 562 in 2025, and still growing: opportunity creation rose 20% year over year, from 467 to 562.</p></div>
+    <div class="metric-side">
+      <div class="metric-row"><strong>$154.9M</strong><span>Marketing-sourced opportunity value, up from $49.8M <em>+211%</em></span></div>
+      <div class="metric-row"><strong>337</strong><span>Qualified opportunities, up from 75 <em>+349%</em></span></div>
+      <div class="metric-row"><strong>$94.6M</strong><span>Qualified opportunity value, up from $24.3M <em>+289%</em></span></div>
+    </div>
+  </div>
+
+  <div class="results-grid">
+    <div class="panel">
+      <div class="panel-head"><h3>Pipeline, 2019 vs 2025</h3><div class="legend"><span class="a"><i></i>2019</span><span class="b"><i></i>2025</span></div></div>
+      <div class="cmp"><div class="cmp-label">Opportunities</div><div><div class="cmp-line a"><i style="width:26.9%"></i><em><b>151</b></em></div><div class="cmp-line b"><i style="width:100%"></i><em><b>562</b></em></div></div><div class="cmp-delta">+272%</div></div>
+      <div class="cmp"><div class="cmp-label">Qualified opps</div><div><div class="cmp-line a"><i style="width:13.3%"></i><em><b>75</b></em></div><div class="cmp-line b"><i style="width:60%"></i><em><b>337</b></em></div></div><div class="cmp-delta">+349%</div></div>
+      <div class="cmp"><div class="cmp-label">Stage 3+ opps</div><div><div class="cmp-line a"><i style="width:3.4%"></i><em><b>19</b></em></div><div class="cmp-line b"><i style="width:9.4%"></i><em><b>53</b></em></div></div><div class="cmp-delta">+179%</div></div>
+      <div class="cmp"><div class="cmp-label">Opp value</div><div><div class="cmp-line a"><i style="width:32.1%"></i><em><b>$49.8M</b></em></div><div class="cmp-line b"><i style="width:100%"></i><em><b>$154.9M</b></em></div></div><div class="cmp-delta">+211%</div></div>
+      <div class="cmp"><div class="cmp-label">Qualified value</div><div><div class="cmp-line a"><i style="width:15.7%"></i><em><b>$24.3M</b></em></div><div class="cmp-line b"><i style="width:61.1%"></i><em><b>$94.6M</b></em></div></div><div class="cmp-delta">+289%</div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Opportunities by source</h3><div class="legend"><span class="a"><i></i>2019</span><span class="b"><i></i>2025</span></div></div>
+      <div class="cmp"><div class="cmp-label">Events</div><div><div class="cmp-line a"><i style="width:23%"></i><em><b>45</b></em></div><div class="cmp-line b"><i style="width:100%"></i><em><b>196</b></em></div></div><div class="cmp-delta">+336%</div></div>
+      <div class="cmp"><div class="cmp-label">Direct website</div><div><div class="cmp-line a"><i style="width:34.7%"></i><em><b>68</b></em></div><div class="cmp-line b"><i style="width:95.4%"></i><em><b>187</b></em></div></div><div class="cmp-delta">+175%</div></div>
+      <div class="cmp"><div class="cmp-label">Paid search</div><div><div class="cmp-line a"><i style="width:1%"></i><em><b>2</b></em></div><div class="cmp-line b"><i style="width:45.9%"></i><em><b>90</b></em></div></div><div class="cmp-delta">45x</div></div>
+      <div class="cmp"><div class="cmp-label">Webinars</div><div><div class="cmp-line a"><i style="width:2%"></i><em><b>4</b></em></div><div class="cmp-line b"><i style="width:18.4%"></i><em><b>36</b></em></div></div><div class="cmp-delta">9x</div></div>
+      <p class="source-note" style="margin-top:14px">Plus measurable contribution from paid social, advertising, email and digital campaigns.</p>
+    </div>
+  </div>
+
+  <div class="conversion">
+    <div class="conv-stats">
+      <div class="conv-stat"><small>Opp → Stage 3+</small><strong><s>12.6%</s> 9.4%</strong><span>Conversion eased as volume grew nearly 4x (19 → 53 opps reaching Stage 3+).</span></div>
+      <div class="conv-stat"><small>Opp → Closed-won</small><strong><s>11.9%</s> 2.8%</strong><span>18 closed-won in 2019 vs. 16 in 2025. The 2025 cohort has had less time to close.</span></div>
+      <div class="conv-stat" style="border-right:0"><small>Qualified → Stage 3+</small><strong>The next lever</strong><span>Advancing more qualified demand into later stages and closed-won revenue.</span></div>
+    </div>
+    <div class="conv-next"><div class="section-label">What's next</div><p><strong>Top-of-funnel scale is built; the focus now is conversion.</strong> The next opportunity is improving the path from initial qualification into advanced sales stages and closed-won revenue: tighter routing and follow-up, stronger qualification criteria and closer alignment with Sales.</p></div>
+  </div>
+
+  <div class="takeaway"><b>Takeaway</b><p>Nearly 4x the opportunities and more than 3x the opportunity value versus 2019, built on a diversified multichannel engine. Conversion into later stages and revenue is the next area of focus.</p></div>
+  <p class="source-note">Source: Salesforce · Marketing-sourced new-business opportunities, SEO excluded · Qualified = opportunities with a recorded qualification date · 2019 vs. 2025</p>
 </div></section>
 
 <section class="section" id="channels"><div class="wrap">
   <div class="section-head"><div><div class="section-label">Leadership scope</div><h2>What I lead.</h2></div><p>I lead the teams and programs responsible for demand generation, digital, conversion and marketing operations. My job is to set the plan, give the team what they need to execute, and make sure the work translates into pipeline.</p></div>
   <div class="channel-grid">
     <article class="channel"><div class="num">01 / TEAM</div><h3>Team leadership</h3><p>Build and lead teams across demand, digital, marketing operations, social and partner programs, with clear goals, ownership and operating cadence.</p><div class="mini">People · priorities · accountability</div></article>
-    <article class="channel"><div class="num">02 / DEMAND</div><h3>Demand + digital</h3><p>Integrated campaigns, paid acquisition, webinars and digital programs managed against pipeline contribution, efficiency and conversion.</p><div class="mini">Campaigns · paid · webinars · social</div></article>
-    <article class="channel"><div class="num">03 / CONVERSION</div><h3>Lead conversion</h3><p>Own the path from response to opportunity, including scoring, enrichment, routing, nurture, sales handoff and stage progression.</p><div class="mini">Scoring · routing · SLA · nurture</div></article>
-    <article class="channel"><div class="num">04 / OPERATIONS</div><h3>Marketing operations</h3><p>Build the data, automation, attribution and reporting infrastructure required to run revenue generation accurately and at scale.</p><div class="mini">Automation · attribution · reporting</div></article>
+    <article class="channel"><div class="num">02 / DEMAND</div><h3>Demand + digital</h3><p>Integrated campaigns, paid acquisition, webinars and digital programs managed against pipeline contribution, efficiency and conversion. Paid search-sourced opportunities grew from 2 to 90.</p><div class="mini">Campaigns · paid · webinars · social</div></article>
+    <article class="channel"><div class="num">03 / CONVERSION</div><h3>Lead conversion</h3><p>Own the path from response to opportunity, including scoring, enrichment, routing, nurture, sales handoff and stage progression, and the next lever for growth: converting qualified demand into later stages.</p><div class="mini">Scoring · routing · SLA · nurture</div></article>
+    <article class="channel"><div class="num">04 / OPERATIONS</div><h3>Marketing operations</h3><p>Build the data, automation, attribution and reporting infrastructure required to run revenue generation accurately and at scale, with Salesforce as the system of record.</p><div class="mini">Automation · attribution · reporting</div></article>
     <article class="channel"><div class="num">05 / AI</div><h3>AI at scale</h3><p>Move AI from isolated experiments into working marketing programs, agents and automated workflows that teams use in day-to-day execution.</p><div class="mini">Agents · workflows · adoption</div></article>
     <article class="channel"><div class="num">06 / PARTNERS</div><h3>Partner growth</h3><p>Run joint programs, co-marketing and partner activation against sourced and influenced pipeline, with clear ownership and follow-through.</p><div class="mini">Co-marketing · MDF · pipeline</div></article>
   </div>
@@ -268,10 +367,11 @@ h1 .headline-arrow{color:var(--blue)}
   <div class="ai-intro"><div class="section-label">AI + automation</div><h2>AI, in practice.</h2><p>I’ve been an early adopter of AI across marketing, building agents, redesigning workflows and putting new programs into production across the team. The point is simple: do better work, faster, and automate the things people shouldn’t have to do manually.</p></div>
   <div class="ai-stack">
     <div class="ai-row"><span>01</span><h3>Build agents</h3><p>Develop agents for repeatable marketing work, research, analysis, program execution and internal workflows. <span class="placeholder">[ADD 2–3 BEST AGENT EXAMPLES]</span></p></div>
-    <div class="ai-row"><span>02</span><h3>Implement AI programs</h3><p>Turn AI capabilities into defined team programs with owners, workflows, standards and measurable adoption. <span class="placeholder">[ADD SCALE / ADOPTION]</span></p></div>
-    <div class="ai-row"><span>03</span><h3>Rebuild lead routing</h3><p>Overhaul scoring, enrichment, routing, alerts and automation so high-value demand gets to the right owner faster and with better context. <span class="placeholder">[ADD BEFORE → AFTER]</span></p></div>
-    <div class="ai-row"><span>04</span><h3>Automate the handoffs</h3><p>Remove manual steps across campaign operations, lead management, reporting and follow-up where automation improves speed and consistency. <span class="placeholder">[ADD TIME / VOLUME IMPACT]</span></p></div>
-    <div class="ai-row"><span>05</span><h3>Drive adoption</h3><p>Make new systems usable by the team through clear processes, training and operating expectations, then improve them based on how people actually work. <span class="placeholder">[ADD TEAM / FUNCTIONS]</span></p></div>
+    <div class="ai-row"><span>02</span><h3>Ship landing pages, no code</h3><p>Design and launch landing pages optimized for conversion without engineering or code, so campaigns go live in hours instead of waiting on a queue.</p></div>
+    <div class="ai-row"><span>03</span><h3>Turn performance into the next test</h3><p>Performance data feeds straight back into the next test, so every campaign result informs the next round of creative, audience, offer and page changes.</p></div>
+    <div class="ai-row"><span>04</span><h3>Enrich, score, route and follow up</h3><p>Rebuilt the inbound lead path end to end, from enrichment and scoring to routing, alerts and follow-up, so high-value demand reaches the right owner faster and with better context, aimed at lifting qualified-to-Stage 3+ conversion as volume scales.</p></div>
+    <div class="ai-row"><span>05</span><h3>Automate reporting + pipeline analysis</h3><p>Automated reporting and pipeline analysis replace manual spreadsheet pulls, giving the team and Sales current views of source, stage and conversion performance.</p></div>
+    <div class="ai-row"><span>06</span><h3>Implement programs + drive adoption</h3><p>Turn AI capabilities into defined team programs with owners, workflows and standards, then make them usable through clear processes, training and expectations, and improve them based on how people actually work.</p></div>
   </div>
 </div></section>
 
@@ -283,17 +383,17 @@ h1 .headline-arrow{color:var(--blue)}
     <div class="leadership-item"><b>Team</b><p><span class="placeholder">[X direct / X total]</span><br>Functions led: <span class="placeholder">[list]</span></p></div>
     <div class="leadership-item"><b>Investment</b><p><span class="placeholder">[7-figure / multi-market / scale]</span><br>Paid, programs, partners, agencies and technology.</p></div>
     <div class="leadership-item"><b>Operating scope</b><p><span class="placeholder">[Global / NA / regions]</span><br><span class="placeholder">[Enterprise / mid-market / SMB]</span></p></div>
-    <div class="leadership-item"><b>Cross-functional</b><p>Sales · RevOps · Product Marketing · Finance<br><span class="placeholder">[SDR / partner / regional ownership]</span></p></div>
+    <div class="leadership-item"><b>Cross-functional</b><p>Sales · RevOps · Product Marketing · Finance<br><span class="placeholder">[Partner / regional ownership]</span></p></div>
   </div>
 </div></section>
 
 <section class="section" id="proof"><div class="wrap">
   <div class="section-head"><div><div class="section-label">Selected work</div><h2>What changed.</h2></div><p>A few examples of the programs, systems and processes I’ve built or rebuilt, with the results to match.</p></div>
   <div class="proof-list">
-    <article class="proof"><span>01</span><h3>AI marketing at scale</h3><p>Moved AI from experimentation into day-to-day marketing execution through agents, defined programs, workflow automation and team adoption.</p><b class="placeholder">[AI: agents / users / hours saved / output]</b></article>
-    <article class="proof"><span>02</span><h3>Lead management overhaul</h3><p>Reworked scoring, enrichment, routing, alerts and automation to reduce leakage, accelerate follow-up and improve the path from response to qualified opportunity.</p><b class="placeholder">[ROUTING: before → after / conversion / SLA]</b></article>
-    <article class="proof"><span>03</span><h3>Digital acquisition reset</h3><p>Rebuilt paid channel mix, audience strategy, creative testing and landing-page conversion around pipeline efficiency instead of lead volume.</p><b class="placeholder">[PAID: spend scale / CPL / conversion / pipeline]</b></article>
-    <article class="proof"><span>04</span><h3>Webinar + digital engine</h3><p>Built repeatable digital programming with audience segmentation, promotion, nurture and sales follow-up designed into the motion.</p><b class="placeholder">[PROGRAMS: # / registrants / opps / pipeline]</b></article>
+    <article class="proof"><span>01</span><h3>Marketing-sourced pipeline growth</h3><p>Scaled marketing-sourced new-business opportunities from 151 to 562 and opportunity value from $49.8M to $154.9M, while shifting from a narrow channel mix to a diversified, multichannel engine.</p><b class="stat-tag">3.7x opps · 3.1x value · 2019 → 2025</b></article>
+    <article class="proof"><span>02</span><h3>Lead management overhaul</h3><p>Reworked scoring, enrichment, routing, alerts and automation to reduce leakage, accelerate follow-up and improve the path from response to qualified opportunity. Qualified opportunities grew 349% to 337.</p><b class="placeholder">[ROUTING: before → after / conversion / SLA]</b></article>
+    <article class="proof"><span>03</span><h3>Digital acquisition reset</h3><p>Rebuilt paid channel mix, audience strategy, creative testing and landing-page conversion around pipeline efficiency instead of lead volume. Paid search-sourced opportunities grew from 2 to 90.</p><b class="stat-tag">Paid search: 2 → 90 opps (45x)</b></article>
+    <article class="proof"><span>04</span><h3>Webinar + event engine</h3><p>Built repeatable event and digital programming with audience segmentation, promotion, nurture and sales follow-up designed into the motion. Event-sourced opportunities grew 336% and webinar-sourced opportunities grew 9x.</p><b class="stat-tag">Events: 45 → 196 · Webinars: 4 → 36</b></article>
     <article class="proof"><span>05</span><h3>Partner demand program</h3><p>Built repeatable co-marketing motions combining partner audiences, shared campaigns and clearer sourced-pipeline accountability.</p><b class="placeholder">[PARTNERS: # partners / sourced pipeline]</b></article>
   </div>
 </div></section>
@@ -301,14 +401,14 @@ h1 .headline-arrow{color:var(--blue)}
 <section class="section" id="career"><div class="wrap">
   <div class="section-head"><div><div class="section-label">Experience</div><h2>Experience.</h2></div><p>Keep this short. Company, role, scope, and the clearest evidence of what changed while Katie owned it.</p></div>
   <div class="career-stack">
-    <div class="career-row"><div class="career-company"><span class="placeholder">[COMPANY 01]</span></div><div class="career-role"><span class="placeholder">[TITLE]</span><br><span class="placeholder">[DATES]</span></div><div class="career-copy"><span class="placeholder">[1 sentence: business context + scope + strongest measurable result]</span></div></div>
+    <div class="career-row"><div class="career-company"><span class="placeholder">[COMPANY 01]</span></div><div class="career-role"><span class="placeholder">[TITLE]</span><br><span class="placeholder">[DATES]</span></div><div class="career-copy"><span class="placeholder">[1 sentence: business context + scope + strongest measurable result, e.g. grew marketing-sourced opportunities 3.7x, from 151 to 562, and opportunity value from $49.8M to $154.9M]</span></div></div>
     <div class="career-row"><div class="career-company"><span class="placeholder">[COMPANY 02]</span></div><div class="career-role"><span class="placeholder">[TITLE]</span><br><span class="placeholder">[DATES]</span></div><div class="career-copy"><span class="placeholder">[1 sentence: what Katie owned + scale + measurable impact]</span></div></div>
     <div class="career-row"><div class="career-company"><span class="placeholder">[COMPANY 03]</span></div><div class="career-role"><span class="placeholder">[TITLE]</span><br><span class="placeholder">[DATES]</span></div><div class="career-copy"><span class="placeholder">[1 sentence: progression / earlier relevant revenue-generation experience]</span></div></div>
   </div>
 </div></section>
 
 <section class="section" id="about"><div class="wrap about">
-  <div><div class="section-label">About</div><h2>Demand. Operations. AI.</h2><div class="about-copy"><p>I’m a senior revenue generation leader focused on building the teams, programs and systems that produce measurable pipeline.</p><p>My scope spans <strong>demand generation, digital acquisition, marketing operations, lead conversion, partner programs and AI-enabled marketing</strong>. I’ve led both the execution and the infrastructure behind them, including building agents, implementing AI programs at scale, and redesigning lead routing and automation.</p><p>I’m execution-oriented and pragmatic. I like clear goals, good people, useful data and processes that make the work easier rather than harder.</p></div></div>
+  <div><div class="section-label">About</div><h2>Demand. Operations. AI.</h2><div class="about-copy"><p>I’m a senior revenue generation leader focused on building the teams, programs and systems that produce measurable pipeline. Since 2019, marketing-sourced opportunities have grown <strong>3.7x, from 151 to 562</strong>, and associated opportunity value from <strong>$49.8M to $154.9M</strong>.</p><p>My scope spans <strong>demand generation, digital acquisition, marketing operations, lead conversion, partner programs and AI-enabled marketing</strong>. I’ve led both the execution and the infrastructure behind them, including building agents, implementing AI programs at scale, and redesigning lead routing and automation.</p><p>I’m execution-oriented and pragmatic, and I’m honest about where the work is still unfinished: the next frontier is converting qualified demand into later-stage pipeline and closed-won revenue. I like clear goals, good people, useful data and processes that make the work easier rather than harder.</p></div></div>
   <aside class="scope"><div class="section-label">Leadership scope</div><div class="scope-row"><b>Own</b><span>Pipeline creation + revenue contribution</span></div><div class="scope-row"><b>Lead</b><span>Teams across demand, digital, ops + partners</span></div><div class="scope-row"><b>Optimize</b><span>Channel mix, conversion, velocity + investment</span></div><div class="scope-row"><b>Partner with</b><span>Sales, RevOps, Product Marketing + Finance</span></div><div class="scope-row"><b>Build</b><span>Teams, AI agents, automation + repeatable growth motions</span></div></aside>
 </div></section>
 </main>
